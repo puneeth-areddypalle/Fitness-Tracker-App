@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Fitness Tracker</h1>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h2>Steps</h2>
+                <p id="stepsDisplay">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Calories</h2>
+                <p id="caloriesDisplay">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Workout Time</h2>
+                <p id="workoutDisplay">0 mins</p>
+            </div>
+
+        </div>
+        <div class="progress-section">
+    <h2>Daily Progress</h2>
+
+    <label>Steps Goal</label>
+    <div class="progress-bar">
+        <div id="stepsProgress"></div>
+    </div>
+
+    <label>Calories Goal</label>
+    <div class="progress-bar">
+        <div id="caloriesProgress"></div>
+    </div>
+
+    <label>Workout Goal</label>
+    <div class="progress-bar">
+        <div id="workoutProgress"></div>
+    </div>
+</div>
+<div class="history-section">
+    <h2>Activity History</h2>
+    <ul id="historyList"></ul>
+</div>
+
+        <div class="form">
+
+            <input type="number" id="stepsInput" placeholder="Enter Steps">
+
+            <input type="number" id="caloriesInput" placeholder="Enter Calories">
+
+            <input type="number" id="workoutInput" placeholder="Workout Time (mins)">
+
+            <button id="saveBtn">Save Data</button>
+            <button id="resetBtn">Reset</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
